@@ -1,0 +1,62 @@
+[
+  {
+      "question": "Qual comando é usado para imprimir algo no console em Python?",
+      "options": ["echo", "console.log", "print", "println"],
+      "answer": "print",
+      "video": "https://www.youtube.com/embed/video-de-reforco-1"
+  },
+  {
+      "question": "Qual é o tipo de dado utilizado para armazenar números inteiros em Python?",
+      "options": ["int", "float", "str", "list"],
+      "answer": "int",
+      "video": "https://www.youtube.com/embed/video-de-reforco-2"
+  },
+  {
+      "question": "Qual operador é usado para soma em Python?",
+      "options": ["+", "-", "*", "/"],
+      "answer": "+",
+      "video": "https://www.youtube.com/embed/video-de-reforco-3"
+  },
+  {
+      "question": "Como se cria uma lista em Python?",
+      "options": ["{}", "[]", "()", "<>"],
+      "answer": "[]",
+      "video": "https://www.youtube.com/embed/video-de-reforco-4"
+  },
+  {
+      "question": "Como se chama uma função em Python?",
+      "options": ["def nome_funcao()", "func nome_funcao()", "definicao nome_funcao()", "function nome_funcao()"],
+      "answer": "def nome_funcao()",
+      "video": "https://www.youtube.com/embed/video-de-reforco-5"
+  },
+  {
+      "question": "O que é uma variável em Python?",
+      "options": ["Uma função", "Um tipo de dado", "Uma referência a um valor", "Um número fixo"],
+      "answer": "Uma referência a um valor",
+      "video": "https://www.youtube.com/embed/video-de-reforco-6"
+  },
+  {
+      "question": "Qual é o comando para importar um módulo em Python?",
+      "options": ["import", "include", "require", "using"],
+      "answer": "import",
+      "video": "https://www.youtube.com/embed/video-de-reforco-7"
+  },
+  {
+      "question": "Como você comenta uma linha de código em Python?",
+      "options": ["// comentário", "# comentário", "/* comentário */", "comment"],
+      "answer": "# comentário",
+      "video": "https://www.youtube.com/embed/video-de-reforco-8"
+  },
+  {
+      "question": "Qual é o comando para obter o tamanho de uma lista em Python?",
+      "options": ["len()", "size()", "count()", "length()"],
+      "answer": "len()",
+      "video": "https://www.youtube.com/embed/video-de-reforco-9"
+  },
+  {
+      "question": "O que significa 'elif' em Python?",
+      "options": ["else if", "else for", "elseif", "else function"],
+      "answer": "else if",
+      "video": "https://www.youtube.com/embed/video-de-reforco-10"
+  }
+]

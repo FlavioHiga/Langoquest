@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script src="motion.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LangoQuest - Quiz Animado</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .options button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 200px;
+            background: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .options button:hover {
+            background: darkblue;
+            transform: scale(1.1);
+        }
+        .hidden {
+            display: none;
+        }
+        .fade-out {
+            animation: fadeOut 0.5s forwards;
+        }
+        @keyframes fadeOut {
+            to { opacity: 0; transform: scale(0.9); }
+        }
+        .shake {
+            animation: shake 0.5s;
+        }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25%, 75% { transform: translateX(-10px); }
+            50% { transform: translateX(10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="quiz-container">
+        <h1 id="question">Carregando pergunta...</h1>
+        <div id="options" class="options"></div>
+        <p id="feedback"></p>
+        <div id="video-container" class="hidden">
+            <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <button onclick="nextQuestion()">Continuar</button>
+        </div>
+    </div>
+
+</body>
+</html>
