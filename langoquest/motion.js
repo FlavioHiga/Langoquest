@@ -44,13 +44,17 @@ document.addEventListener("DOMContentLoaded", () => {
         
         clearInterval(timer);
         timeLeft = 30;
-        startTimer();
+        
+        // Só inicia o timer no modo desafio
+        if (gameMode === "challenge") {
+            startTimer();
+        }
         
         document.getElementById("quiz-container").innerHTML = `
             <h1 id="question">${questions[step].question}</h1>
             <div id="options" class="options"></div>
             <p id="feedback"></p>
-            <p id="timer" style="font-weight: bold; color: green;">Tempo restante: ${timeLeft}s</p>
+            ${gameMode === "challenge" ? `<p id="timer" style="font-weight: bold; color: green;">Tempo restante: ${timeLeft}s</p>` : ""}
             <div id="video-container" class="hidden">
                 <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
                 <button onclick="nextQuestion()">Continuar</button>
@@ -70,10 +74,11 @@ document.addEventListener("DOMContentLoaded", () => {
         timer = setInterval(() => {
             timeLeft--;
             let timerElement = document.getElementById("timer");
-            timerElement.innerText = `Tempo restante: ${timeLeft}s`;
-            
-            if (timeLeft <= 10) timerElement.style.color = "orange";
-            if (timeLeft <= 5) timerElement.style.color = "red";
+            if (timerElement) {
+                timerElement.innerText = `Tempo restante: ${timeLeft}s`;
+                if (timeLeft <= 10) timerElement.style.color = "orange";
+                if (timeLeft <= 5) timerElement.style.color = "red";
+            }
             
             if (timeLeft <= 0) {
                 clearInterval(timer);
