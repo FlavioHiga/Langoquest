@@ -58,5 +58,84 @@
       "options": ["else if", "else for", "elseif", "else function"],
       "answer": "else if",
       "video": "https://www.youtube.com/embed/video-de-reforco-10"
-  }
-]
+  },
+  {
+    "question": "Qual é a função utilizada para obter a entrada do usuário em Python?",
+    "options": ["input()", "scan()", "read()", "get_input()"],
+    "answer": "input()",
+    "video": "https://www.youtube.com/embed/video-de-reforco-11"
+  },
+  {
+    "question": "Como você cria um dicionário em Python?",
+    "options": ["{}", "[]", "()", "<>"],
+    "answer": "{}",
+    "video": "https://www.youtube.com/embed/video-de-reforco-12"
+  },
+  {
+    "question": "Qual é o operador utilizado para exponenciação em Python?",
+    "options": ["^", "**", "exp()", "pow()"],
+    "answer": "**",
+    "video": "https://www.youtube.com/embed/video-de-reforco-13"
+  },
+    {
+      "question": "Qual é a função usada para exibir algo no console em Python?",
+      "options": ["echo()", "print()", "console.log()", "display()"],
+      "answer": "print()",
+      "video": "https://www.youtube.com/embed/video-de-reforco-14"
+    },
+    {
+      "question": "Como você declara uma variável em Python?",
+      "options": ["var x = 10", "x := 10", "x = 10", "let x = 10"],
+      "answer": "x = 10",
+      "video": "https://www.youtube.com/embed/video-de-reforco-15"
+    },
+    {
+      "question": "Qual destas estruturas é usada para um loop em Python?",
+      "options": ["for", "while", "loop", "foreach"],
+      "answer": "for",
+      "video": "https://www.youtube.com/embed/video-de-reforco-16"
+    },
+    {
+      "question": "Qual método é usado para obter o tamanho de uma lista em Python?",
+      "options": ["size()", "count()", "length()", "len()"],
+      "answer": "len()",
+      "video": "https://www.youtube.com/embed/video-de-reforco-17"
+    },
+    {
+      "question": "Como você faz um comentário de uma linha em Python?",
+      "options": ["// comentário", "/* comentário */", "# comentário", "-- comentário"],
+      "answer": "# comentário",
+      "video": "https://www.youtube.com/embed/video-de-reforco-18"
+    },
+    {
+      "question": "O que a função 'range(5)' retorna?",
+      "options": ["[1, 2, 3, 4, 5]", "[0, 1, 2, 3, 4]", "[0, 1, 2, 3, 4, 5]", "[1, 2, 3, 4]"],
+      "answer": "[0, 1, 2, 3, 4]",
+      "video": "https://www.youtube.com/embed/video-de-reforco-19"
+    },
+    {
+      "question": "Qual desses tipos de dados não existe no Python?",
+      "options": ["int", "str", "char", "float"],
+      "answer": "char",
+      "video": "https://www.youtube.com/embed/video-de-reforco-20"
+    },
+    {
+      "question": "Qual dessas formas é correta para abrir um arquivo em Python?",
+      "options": ["open('file.txt', 'r')", "file.open('file.txt')", "openfile('file.txt')", "read('file.txt')"],
+      "answer": "open('file.txt', 'r')",
+      "video": "https://www.youtube.com/embed/video-de-reforco-21"
+    },
+    {
+      "question": "Qual é o resultado de '3 == '3' em Python?",
+      "options": ["True", "False", "None", "Error"],
+      "answer": "False",
+      "video": "https://www.youtube.com/embed/video-de-reforco-22"
+    },
+    {
+      "question": "O que 'append()' faz em uma lista?",
+      "options": ["Adiciona um item no final", "Remove um item", "Ordena a lista", "Cria uma cópia da lista"],
+      "answer": "Adiciona um item no final",
+      "video": "https://www.youtube.com/embed/video-de-reforco-23"
+    }
+  ]
+  
