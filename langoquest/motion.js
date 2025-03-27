@@ -8,40 +8,15 @@ document.addEventListener("DOMContentLoaded", () => {
     let timeLeft = 30;
     let playerName = "";
     
-   function loadQuestion() {
-    if (step >= questions.length) {
-        endGame();
-        return;
+    async function loadQuestions() {
+        try {
+            const response = await fetch('questions.json');
+            questions = await response.json();
+            showModeSelection();
+        } catch (error) {
+            console.error("Erro ao carregar as perguntas:", error);
+        }
     }
-    
-    clearInterval(timer);
-    timeLeft = 30;
-
-    // Só inicia o timer no modo desafio
-    if (gameMode === "challenge") {
-        startTimer();
-    }
-
-    document.getElementById("quiz-container").innerHTML = `
-        <h1 id="question">${questions[step].question}</h1>
-        <div id="options" class="options"></div>
-        <p id="feedback"></p>
-        ${gameMode === "challenge" ? `<p id="timer" style="font-weight: bold; color: green;">Tempo restante: ${timeLeft}s</p>` : ""}
-        <div id="video-container" class="hidden">
-            <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-            <button onclick="nextQuestion()">Continuar</button>
-        </div>
-    `;
-
-    const optionsContainer = document.getElementById("options");
-    questions[step].options.forEach(option => {
-        const button = document.createElement("button");
-        button.innerText = option;
-        button.onclick = () => checkAnswer(button, option);
-        optionsContainer.appendChild(button);
-    });
-}
-
 
     function showModeSelection() {
         document.getElementById("quiz-container").innerHTML = `
